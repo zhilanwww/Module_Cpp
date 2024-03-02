@@ -30,8 +30,7 @@ Type casting to solve the problem with integer division.
 
 * Variable Scope: Variables declared within a block have that block as their scope. This means they are only accessible within the block in which they are declared. For example:
 
-'''
-{
+'''{
     int a;
     // 'a' is only accessible within this block
 }
