@@ -14,11 +14,11 @@ Case sensitive, consists of letters, numbers and _, starting with a letter or _,
 
 Type casting to solve the problem with integer division.
 
-  answer = double(numerator) / denominator;
+  * answer = double(numerator) / denominator;
   
   Do NOT use
   
-  answer = double(numerator / denominator);
+  * answer = double(numerator / denominator);
 
   Eg. double (5 / 2) 
   
