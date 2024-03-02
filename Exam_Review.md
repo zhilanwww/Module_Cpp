@@ -102,7 +102,7 @@ int main() {
 
 (y2 >= -0.5 && y2 < 0.3)
 
-** cannot be (-0.5 < y2 < 0.3), because  -0.5 < y2 is 1 and 1 < 0.3 is always true **
+<mark>cannot be (-0.5 < y2 < 0.3),</mark> because  -0.5 < y2 is 1 and 1 < 0.3 is always true
 
 
 (y3 >= 0.001 && y3 <= 0.01 || y3>= 100) 
