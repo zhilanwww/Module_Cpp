@@ -36,4 +36,20 @@ Type casting to solve the problem with integer division.
     // 'a' is only accessible within this block
 }
 ```
+* Increment
 
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 3;
+
+    cout << ++a << endl;   // Pre-increment: increments 'a' and then prints the result (4)
+    cout << a << endl;     // Prints the current value of 'a' (4)
+    cout << a++ << endl;   // Post-increment: prints the current value of 'a' and then increments it (4, then increments to 5)
+    cout << a << endl;     // Prints the updated value of 'a' after post-increment (5)
+
+    return 0;
+}
+```
