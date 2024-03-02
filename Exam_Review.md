@@ -1,9 +1,10 @@
 # Week 1
 ## Fundamentals
 
-* Define the variables before input.
+Define the variables before input.
 
 double x;
+
 cin >> x;
 
 ## Variable Names
@@ -20,9 +21,9 @@ Type casting to solve the problem with integer division.
   
   * answer = double(numerator / denominator);
 
-  Eg. double (5 / 2) 
+ Eg. double (5 / 2) 
   
-  In this example, the result will be 2.0 instead of the expected 2.5. This is because numerator / denominator performs integer division, resulting in 2, and only then is it cast to a double.
+ In this example, the result will be 2.0 instead of the expected 2.5. This is because numerator / denominator performs integer division, resulting in 2, and only then is it cast to a double.
 
 
 ## Libraries in This Module
@@ -30,6 +31,8 @@ Type casting to solve the problem with integer division.
 <cmath> - library with mathematical functions
 
 <iostream> - links the library to our cod
+
+<fstream> - Using <fstream> instead of <iostream> and object of stream to write into a le instead of the screen.
 
 
 # Week 2
@@ -147,6 +150,62 @@ int main() {
 }
 // Output: 10 9 8 7 6 5 4 3 2 1
 ```
+
+## Continue and Break
+continue - jumps to the next iteration
+
+break - stops the loop immediately
+
+Eg. Prime Number
+```
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin >> n;
+	bool isprime = true;
+	for (int i=2; i<n/2; i++)
+	{
+		if (n % i == 0) {
+			isprime = false;
+			break;
+		}
+	}
+	cout << n << " is " << ((isprime) ? "" : "NOT ") << "prime\n";
+	return 0;
+}
+```
+
+# Week 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
