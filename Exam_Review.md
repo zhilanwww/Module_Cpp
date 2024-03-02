@@ -28,9 +28,9 @@ Type casting to solve the problem with integer division.
 
 ## Libraries in This Module
 
-Use #include + \<library name\>
+Use `#include + \<*library name*\>`
 
-\<cmath\> - library with mathematical functions
+`<cmath>` - library with mathematical functions
 
 \<iostream\> - links the library to our cod
 
