@@ -6,11 +6,11 @@
 double x;
 cin >> x;
 
-* Variable Names
+## Variable Names
 
 Case sensitive, consists of letters, numbers and _, starting with a letter or _, can’t use reserved words
 
-* Type Casting
+## Type Casting
 
 Type casting to solve the problem with integer division.
 
@@ -80,7 +80,7 @@ Output:
 5       8       8
 
 
-* Increment
+## Increment
 
 ```
 #include <iostream>
@@ -98,12 +98,11 @@ int main() {
 }
 ```
 
-* Value Range
+## Value Range
 
 (y2 >= -0.5 && y2 < 0.3)
 
-<mark>cannot be (-0.5 < y2 < 0.3),</mark> because  -0.5 < y2 is 1 and 1 < 0.3 is always true
-
+cannot be (-0.5 < y2 < 0.3), because  -0.5 < y2 is 1 and 1 < 0.3 is always true
 
 (y3 >= 0.001 && y3 <= 0.01 || y3>= 100) 
 
@@ -112,6 +111,7 @@ or ((y3 >= 0.001 && y3 <= 0.01) || (y3>= 100))
 && is prior to ||, it can also be (y3>= 100 || y3 >= 0.001 && y3 <= 0.01)
 
 
+# Week 3
 
 
 
