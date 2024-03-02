@@ -3,7 +3,7 @@
 
 * Define the variables before input.
 
-== double x; == 
+==double x;== 
 
 * Variable Names
 
