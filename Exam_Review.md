@@ -112,9 +112,41 @@ or ((y3 >= 0.001 && y3 <= 0.01) || (y3>= 100))
 
 
 # Week 3
+## Loops
 
+In a do-while loop, the statements inside the loop are executed first, and then the condition is checked. 
 
+So, do-while loop first runs the statements and then checks for the condition, thus always performing **at least ONE** iteration.
 
+```
+#include <iostream>
+
+int main() {
+    int n = 10;
+
+    do {
+        std::cout << --n << " ";
+    } while (n > 0);
+
+    return 0;
+}
+// Output: 9 8 7 6 5 4 3 2 1 0
+```
+
+```
+#include <iostream>
+
+int main() {
+    int n = 10;
+
+    do {
+        std::cout << n-- << " ";
+    } while (n > 0);
+
+    return 0;
+}
+// Output: 10 9 8 7 6 5 4 3 2 1
+```
 
 
 
