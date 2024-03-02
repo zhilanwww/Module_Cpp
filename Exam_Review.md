@@ -32,7 +32,7 @@ Type casting to solve the problem with integer division.
 
 <iostream> - links the library to our cod
 
-<fstream> - Using <fstream> instead of <iostream> and object of stream to write into a le instead of the screen.
+<fstream> - Using <fstream> instead of <iostream> and object of stream to write into a file instead of the screen.
 
 
 # Week 2
