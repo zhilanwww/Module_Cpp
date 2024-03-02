@@ -1,9 +1,10 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
+# Week 1
+## Math Library
+
+
 int main()
 {
-	double x; //define first
+	==double x;== 
 	cin >> x;
 	cout << sqrt(x) << endl;
 	
