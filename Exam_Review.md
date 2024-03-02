@@ -28,11 +28,11 @@ Type casting to solve the problem with integer division.
 
 ## Libraries in This Module
 
-<cmath> - library with mathematical functions
+\<cmath\> - library with mathematical functions
 
-<iostream> - links the library to our cod
+iostream - links the library to our cod
 
-<fstream> - Using <fstream> instead of <iostream> and object of stream to write into a file instead of the screen.
+fstream - Using <fstream> instead of <iostream> and object of stream to write into a file instead of the screen.
 
 
 # Week 2
