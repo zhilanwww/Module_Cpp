@@ -42,7 +42,7 @@ Use #include + \<*library name*\>
 
 * Variable Scope: Variables declared within a block have that block as their scope. This means they are only accessible within the block in which they are declared. For example:
 
-```
+```cpp
 {
     int a;
     // 'a' is only accessible within this block
@@ -51,7 +51,7 @@ Use #include + \<*library name*\>
 
 Another example: 
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -87,7 +87,7 @@ Output:
 
 ## Increment
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -123,7 +123,7 @@ In a do-while loop, the statements inside the loop are executed first, and then 
 
 So, do-while loop first runs the statements and then checks for the condition, thus always performing **at least ONE** iteration.
 
-```
+```cpp
 #include <iostream>
 
 int main() {
@@ -138,7 +138,7 @@ int main() {
 // Output: 9 8 7 6 5 4 3 2 1 0
 ```
 
-```
+```cpp
 #include <iostream>
 
 int main() {
@@ -159,7 +159,7 @@ continue - jumps to the next iteration
 break - stops the loop immediately
 
 Eg. Prime Number
-```
+```cpp
 #include <iostream>
 using namespace std;
 int main()
@@ -194,7 +194,7 @@ float cdf(float); // A function must be declared before being used. Function dec
 
 #endif
 ```
-Create "average.cpp" with function denitions.
+Create "average.cpp" with function files.
 
 Do not forget to include any libraries you use.
 
