@@ -184,7 +184,7 @@ int main()
 
 We often want to reuse compiled code, e.g. libraries. We can create our own libraries as follows.
 
-Decompose the code into *header* and *source* files.
+Decompose the code into *header* and *source* files.
 
 ```cpp
 #ifndef CDF_H
