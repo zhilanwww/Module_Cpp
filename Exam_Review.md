@@ -180,8 +180,27 @@ int main()
 ```
 
 # Week 4
+## Polymorphism
 
-==highlight==
+We often want to reuse compiled code, e.g. libraries. We can create our own libraries as follows.
+
+Decompose the code into *header* and *source* files.
+
+```cpp
+#ifndef CDF_H
+#define CDF_H
+
+float cdf(float); // A function must be declared before being used. Function declarations end with a ;
+
+#endif
+```
+Create "average.cpp" with function denitions.
+
+Do not forget to include any libraries you use.
+
+In "main.cpp" add ```#include "cdf.h"```
+
+Compile all relevant ".cpp" files
 
 
 
