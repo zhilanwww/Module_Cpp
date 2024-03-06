@@ -37,6 +37,8 @@ Use #include + \<*library name*\>
 
 \<fstream\> - Using \<fstream\> instead of \<iostream\> and object of stream to write into a file instead of the screen.
 
+\<vector\> - Using vectors.
+
 
 # Week 2
 ## Blocks and Scope
@@ -322,11 +324,112 @@ In the given C++ code, the array `arr` is declared with a size of 5, but you are
 
 The specific output cannot be predicted, and it is considered undefined behavior. It may vary depending on the compiler and platform.
 
+## Vector
+Define: vector \<int\> vec1
 
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
 
+int main()
+{
+    // Declare an empty vector
+    vector<int> vec1;
 
+    // Declare a vector with 4 elements, all initialized to 10
+    vector<int> vec2(4, 10);
 
+    // Declare a vector and initialize it with the elements of another vector (vec2)
+    vector<int> vec3(vec2.begin(), vec2.end());
 
+    // Print the elements of vec3 using a loop
+    for (int i=0; i<vec3.size(); ++i)
+        cout << vec3[i] << "\t";
+    cout << endl;
+
+    // Create a vector from an array
+    int arr[] = {7, 5, 9};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    vector<int> vec5(arr, arr+len);
+
+    // Print the elements of vec5 using a lambda function and for_each algorithm
+    for_each(vec5.begin(), vec5.end(), [](const int n) {cout << n << "\t";});
+    cout << endl;
+
+    return 0;
+}
+```
+
+## Matrices
+Matrices are two dimensional arrays: A[i][j]
+
+Cannot use A[i,j]!
+
+# Week 6
+## Pointers
+Generally the OS decides the locations of variables, but pointers give us access to these locations.
+
+* Pointer is an address where you find an object
+* Pointers can't have negative values (except 64bit systems)
+
+### Referencing and De-referencing
+Referencing operator `&` takes the address of variable.
+
+De-referencing operator `*` takes the value at address.
+
+```cpp
+int myvar = 25;
+int *foo = &myvar;  // referencing
+int bar = *foo;     // dereferencing
+```
+### Array Variables and Pointer Arithmetic
+
+Array is actually a pointer pointing to the base of the array. Then we can define a pointer and assign to the base of the array.
+
+**The array name itself can be considered as an address,** but it's not the address of the entire array; rather, it's the address of the **first** element.
+
+```cpp
+int arr[5] = {1, 2, 3, 4, 5};
+int* victim = arr;
+
+std::cout << "Before: " << *victim << std::endl; // Prints the value at arr[0]
+
+victim++; // Increment the pointer by the size of int
+
+std::cout << "After: " << *victim << std::endl;  // Prints the value at arr[1]
+```
+
+Pointers and arrays are often the same thing with different syntax. You can increment pointers, but not arrays.
+
+### Dynamic Memory
+`Nullptr` is a pointer that does not point to an object.
+
+```cpp
+#include <iostream>
+
+int main() {
+    int *ptr_a, *ptr_b;
+    ptr_a = new int;
+    *ptr_a = 4;
+    ptr_b = ptr_a;
+
+    std::cout << *ptr_a << " and " << *ptr_b << std::endl;
+
+    delete ptr_b; // Release the memory allocated for ptr_a
+
+    ptr_b = new int;
+    *ptr_a = 7;
+
+    std::cout << *ptr_a << " and " << *ptr_b << std::endl;
+
+    delete ptr_a; // Release the memory allocated for ptr_b
+    delete ptr_b;
+
+    return 0;
+}
+```
 
 
 
